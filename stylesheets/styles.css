@@ -268,3 +268,9 @@ footer {
     color:#444;
   }
 }
+
+.profile {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
