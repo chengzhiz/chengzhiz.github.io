@@ -303,8 +303,74 @@ footer {
   }
 }
 
-.profile {
+.profile-wrap {
+    position: relative;
+    display: inline-block;
     max-width: 210px;
     border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 2px 8px rgba(51, 66, 78, 0.08);
+}
+
+.profile {
+    display: block;
+    max-width: 100%;
+}
+
+.profile-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 34px 14px 12px;
+    background: linear-gradient(180deg, transparent, rgba(51, 66, 78, 0.8));
+    color: #fffdf8;
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+}
+
+.profile-wrap:hover .profile-caption {
+    opacity: 1;
+}
+
+.hover-note {
+    position: relative;
+    border-bottom: 1px dotted #b0864a;
+    cursor: default;
+}
+
+.hover-note-tip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #33424e;
+    color: #fffdf8;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border-bottom: 9px solid transparent;
+    background-clip: padding-box;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease;
+}
+
+.hover-note:hover .hover-note-tip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-note-tip a {
+    color: #dac298;
+}
+
+.hover-note-tip a:hover {
+    color: #fffdf8;
 }
