@@ -1,10 +1,10 @@
-/* overscroll areas: film black */
 html {
-  background: #131619;
+  background: #fff;
 }
 
 body {
-  background: linear-gradient(180deg, #e3eef5 0%, #f8f4ea 45%, #efe3cb 100%);
+  background: #fff;
+  /* background: linear-gradient(180deg, #e3eef5 0%, #f8f4ea 45%, #efe3cb 100%); */
   min-height: calc(100vh - 100px);
   padding:50px;
   font: 14px/1.6 "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
